@@ -19,7 +19,7 @@ pipeline {
             post {
 
                 success {
-                        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#project', message: 'Project_built!!!!!!', teamDomain: '', tokenCredentialId: 'slack'}
+                        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#project', message: 'Project_built!!!!!!', teamDomain: 'https://app.slack.com/client/T03MLC45XRA/composer/draft-ae7e6a74-9902-449f-826f-ba641730e36e', tokenCredentialId: 'slack'}
 
             }
 }
