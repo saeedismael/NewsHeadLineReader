@@ -16,17 +16,9 @@
 <h1 class="text-center" style="color: darkblue">ynet - חדשות </h1>
 <div style="height: 40px"></div>
 <div class="row">
-    <div class="col-3  p-2 container"  th:each="item: ${content}">
-        <div class="container-fluid bg-light border border-success border-3 rounded-4" >
-            <div class="h4 container-flex" th:text="${item.getTitle()}"></div>
-            <div class="" th:utext="${item.getDescription().getValue()}"></div>
-            <div >
-                <a th:href="${item.getLink() }"> עוד...</a>
-            </div>
-            <div class="h6" th:text="${item.getPublishedDate()}"></div>
+    <div class="col-8  p-2 container"  >
 
-        </div>
-
+        <script src="//rss.bloople.net/?url=http%3A%2F%2Fwww.ynet.co.il%2FIntegration%2FStoryRss2.xml&showtitle=false&type=js"></script>
         <div style="height: 40px"></div>
     </div>
 </div>

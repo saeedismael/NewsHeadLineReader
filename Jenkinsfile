@@ -19,7 +19,7 @@ pipeline {
             post {
 
                 success {
-                        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#project', message: 'Project_built!!!!!!', teamDomain: 'fursa-global', tokenCredentialId: 'slack'}
+                        slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#project', message: 'Project_built!!!!!!', teamDomain: 'fursa-global', tokenCredentialId: 'fursa-global'}
 
             }
 }
